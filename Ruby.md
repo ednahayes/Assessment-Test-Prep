@@ -46,6 +46,10 @@ b) Enables code reuse
 c) Encapsulates functionality
 d) Allows the developer to make certain methods/variables inaccessible to other classes
 
+```ruby
+D
+```
+
 ## Consider the following two methods:
 ```ruby
 def times_two(arg1);
@@ -65,11 +69,34 @@ sum 1, 2
 sum(1, 2)
 sum (1, 2)
 ```
+times_two(5)
+sum(1, 2)
 
 ## What is missing? M_____/View/Controller
+```ruby
+MODEL
+```
+
 
 ## What is the most beneficial aspect of TDD?
 
+Promotes good coding principles like DRY, and helps prevent bugs rather than to remove them after the code is written, it helps to test the expected behavior  before the code is written..
+
 ## Write a function that accepts an array of numbers and a second number. Beginning at index 0, total up the sum of the values of the array until you've met or surpassed the second argument. Return the number of elements required to fulfill the goal. If the goal can't be reached, return 0.
+
+```ruby
+def sumOfNumbers(array, num)
+  total = 0
+  if array.count <= num
+    array.map  {|n| total += n}
+  else
+    return 0
+  end
+  return total, array.count
+end
+```
+
+sumOfNumbers([1, 2, 3, 4], 5)  
+
 
 ## Make a copy of http://jsbin.com/beyape/1/edit complete the task described in the comments and attach the link
