@@ -100,3 +100,5 @@ sumOfNumbers([1, 2, 3, 4], 5)
 
 
 ## Make a copy of http://jsbin.com/beyape/1/edit complete the task described in the comments and attach the link
+
+http://jsbin.com/xadezes/edit?html,js,console,output
