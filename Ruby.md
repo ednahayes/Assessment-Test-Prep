@@ -15,16 +15,29 @@ nil     ? "true" : "false"
 answer: false ? "true" : "false"
 
 ## I want to write some code that takes an array of numbers, multiplies each item in the array by 3, and returns a new array with the new values. know I should use #map, #each, or #select, but I’m not sure which one is best -- teach me.
+```ruby
 array_of_numbers = [1, 2, 3]
 array_of_numbers.map { |n| n * 3 }   => [3, 6, 9] #map returns a new array with the block code given. BEST CHOICE if not only!!!
+
 array_of_numbers.each { |n| n * 3 } => [1, 2, 3] #each returns the original object
+
 array_of_numbers.select { |n| n * 3 } => [1, 2, 3] #select returns the original object, and is used to select specific numbers not going thru the loop and selecting each number and multiplying.
+```
 I tried different approach on select but still didn't get the new array 
 
+```ruby
 array_of_numbers.select { |n| n == 1 || 2 || 3 * 3 }  => [1, 2, 3]
-
+```
 
 ## What are the common controller actions?
+Create
+
+Read
+
+Update
+
+Delete
+
 
 ## Which of the following is not a benefit of Object-Oriented Programming?
 
